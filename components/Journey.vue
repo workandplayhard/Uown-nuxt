@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative"
+    class="flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative overflow-hidden"
   >
     <div class="lg:text-5xl w-447 text-center font-bold md:text-4xl text-3xl">
       Start your UOWN investment journey
