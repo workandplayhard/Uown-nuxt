@@ -1,74 +1,70 @@
 <template>
   <div
-    class="main h-screen-minus-header sm:grid grid-cols-2 sm:items-center bg-no-repeat bg-contain sm:bg-cover py-10"
+    class="flex justify-center items-center flex-col color-black invest-banner bg-center bg-cover"
   >
-    <div class="container">
-      <Breadcrumbs
-        :breadcrumbs="breadcrumbs"
-        class="sm:absolute top-0 left-0 mb-4 sm:container sm:mt-4"
-      />
-      <BannerText
-        title="Property Investments"
-        para="The new way to invest in property"
-        btnText="View properties"
-        btnLink="https://app.uown.co/properties"
-        btnOuterLink
-        underText="Capital at risk."
-      />
+    <h1 class="banner-title font-bold text-center">The power of us</h1>
+    <div class="text-base md:text-2xl banner-content text-center color-black">
+      UOWN makes property investing simple accessible and easy words.
     </div>
+    <div class="text-base md:text-2xl banner-content text-center color-black">
+      Rated 4.6/5 on Trustpilot.
+    </div>
+    <button
+      class="btn-green rounded-100 color-black mt-10 flex justify-center items-center font-bold text-xl"
+    >
+      Get Started
+    </button>
   </div>
 </template>
 
 <script>
-import BannerText from "@/components/BannerText";
-import breadcrumbList from "@/mixins/breadcrumbList";
-
 export default {
-  name: "PropertyInvestmentBanner",
-  components: {
-    BannerText,
-    Breadcrumbs: () => import("@/components/Breadcrumbs"),
-  },
-
   data() {
-    return {
-      breadcrumbs: [{ text: "Property Investments", link: this.$route.path }],
-    };
-  },
-
-  mixins: [breadcrumbList],
-
-  jsonld() {
-    return this.breadcrumbList;
-  },
+    return {};
+  }
 };
 </script>
-
-<style lang='scss' scoped>
-@import "@/assets/css/_variables";
-
-.main {
-  background-image: url("~@/assets/images/property-investments-banner.png?webp");
-  background-position-y: 50vh;
+<style>
+.invest-banner {
+  background-image: url("../assets/images/INVEST_BANNER.png");
 }
 
-.no-webp .main {
-  background-image: url("~@/assets/images/property-investments-banner.png");
+.banner-title {
+  font-size: 72px;
 }
 
-.container {
-  grid-column: 2;
+.btn-green {
+  background-color: #71e5bd;
+  height: 54px;
+  width: 175px;
 }
 
-@media (min-width: $sm) {
-  .main {
-    background-image: url("~@/assets/images/property-investments-banner-lg.png?webp");
-    background-position-x: 40%;
-    background-position-y: unset;
+@media (max-width: 1023px) {
+  .banner-title {
+    font-size: 48px;
   }
 
-  .no-webp .main {
-    background-image: url("~@/assets/images/property-investments-banner-lg.png");
+  .btn-green {
+    height: 50px !important;
+    width: 162px !important;
   }
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    width: 292px;
+  }
+
+  .banner-content {
+    width: 300px;
+  }
+  .btn-green {
+    height: 48px !important;
+    width: 153px !important;
+  }
+}
+
+.rounded-100 {
+  border-radius: 100px;
 }
 </style>

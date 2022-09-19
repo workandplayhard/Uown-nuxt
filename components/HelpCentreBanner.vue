@@ -6,7 +6,7 @@
       <div>
         <bannerText
           title="How can we help?"
-          para="Our Help Centre is built to help answer any questions you might have."
+          para="The Hub is our knowledge center featuring useful and inspirational articles."
           class="mb-10"
         />
         <!-- <search placeholder="What are you looking for?" /> -->
@@ -21,7 +21,7 @@ import bannerText from "@/components/BannerText";
 
 export default {
   components: {
-    bannerText,
+    bannerText
     // search
   }
 };
