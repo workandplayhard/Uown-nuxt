@@ -1,37 +1,22 @@
 <template>
-  <div class="shadow-md flex flex-col relative bg-white">
-    <nuxt-link :to="link">
-      <cld-image
-        :public-id="cloudinaryImageID(img)"
-        secure="true"
-        :width="thumbnailWidth"
-        crop="fill"
-        fetchFormat="auto"
-        loading="lazy"
-        class="img w-full cover"
-      >
-        <cld-placeholder type="predominant-color"></cld-placeholder>
-    </cld-image>
-    </nuxt-link>
-    <div class="bg-white p-4 rounded-b h-full flex flex-col justify-between">
-      <nuxt-link :to="link" class="title text-xl leading-snug font-family-bold">{{title}}</nuxt-link>
-      <div class="text-sm flex items-center mt-4">
-        <img src="@/assets/images/time.svg" alt class="w-4 mr-2" width="1" height="1" />
-        <span class="text-xs leading-none opacity-60">Published on {{published | formttedDate}}</span>
+  <div class="hub-card">
+    <img
+      src="../assets/images/HUB_CARD_IMAGE.png"
+      class="card-image"
+      :style="{ 'border-bottom': `5px solid ${color}` }"
+    />
+    <div class="p-6">
+      <div class="text-3xl font-bold">
+        {{ title }}
       </div>
+      <nuxt-link class="mt-8 text-xl font-bold" :to="link">
+        {{ linkText }}
+      </nuxt-link>
     </div>
-    <nuxt-link
-      v-if="category"
-      :to="`/category/${category.slug}/1`"
-      class="filter absolute rounded-full py-1 px-3 text-sm text-white bg-soft shadow-md"
-      :style="{ backgroundColor: category.content.color }"
-    >{{category.content.name}}</nuxt-link>
   </div>
 </template>
 
 <script>
-import cloudinaryImageID from '@/mixins/cloudinaryImageID'
-
 export default {
   props: {
     title: {
@@ -42,49 +27,32 @@ export default {
       type: String,
       required: true
     },
-    published: {
-      type: Date,
-      required: true
-    },
-    category: {
-      type: Object,
-      required: true
-    },
     link: {
       type: String,
       required: true
     },
-    thumbnailWidth: {
-      type: Number,
-      default: 582
+    linkText: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true
     }
-  },
-
-  mixins: [cloudinaryImageID]
+  }
 };
 </script>
 
-<style lang='scss' scoped>
-@import '@/assets/css/_variables';
-
-.img {
-  height: 19rem;
-  min-height: 19rem;
-  transition: filter 300ms;
-
-  &:hover {
-    filter: brightness(1.15);
-  }
+<style>
+.hub-card {
+  background-color: white;
+  box-shadow: 0px 8px 9px 18px rgba(29, 29, 27, 0.03);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 412px;
 }
 
-.filter {
-  top: 0.75rem;
-  right: 0.75rem;
-}
-
-@media (min-width: $sm) {
-  .title {
-    font-size: 1.375rem;
-  }
+.card-image {
+  height: 206px;
 }
 </style>

@@ -1,64 +1,76 @@
 <template>
   <div
-    class="main bg-white mt-from-header bg-contain sm:bg-cover sm:bg-right bg-bottom grid py-10 bg-no-repeat min-h-screen sm:min-h-0"
+    class="hub-banner flex flex-col justify-center items-center relative px-8"
   >
-    <div class="container grid sm:grid-cols-2 items-center">
-      <div>
-        <bannerText :title="title" :para="para" />
-        <!-- <search class="my-8" /> -->
-        <filterLinks :categories="categories" />
-      </div>
+    <img
+      src="@/assets/images/HUB_BANNER_BALL1.png"
+      class="absolute banner-ball1"
+    />
+    <img
+      src="@/assets/images/HUB_BANNER_BALL2.png"
+      class="absolute hidden banner-ball2 md:block"
+    />
+    <img
+      src="@/assets/images/HUB_BANNER_BALL3.png"
+      class="absolute banner-ball3"
+    />
+    <h1 class="text-5xl md:text-6xl font-extrabold z-1">The Hub</h1>
+    <div class="text-xl md:text-3xl banner-content text-center z-1">
+      The Hub is our knowledge center featuring useful and inspirational
+      articles. Maybe add another sentence of context in here, describing what
+      the articles theme around...
     </div>
   </div>
 </template>
-
 <script>
-import bannerText from "@/components/BannerText";
-// import search from "@/components/Search";
-import filterLinks from "@/components/HubFilterLinks";
-
 export default {
-  components: {
-    bannerText,
-    // search,
-    filterLinks
-  },
-
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    para: {
-      type: String,
-      required: true
-    },
-    categories: {
-      type: Array,
-      required: true
-    }
+  data() {
+    return {};
   }
 };
 </script>
-
-<style lang='scss' scoped>
-@import "@/assets/css/_variables";
-
-.main {
-  background-image: url("~@/assets/images/the-hub.png?webp");
+<style>
+.hub-banner {
+  height: 583px;
+}
+.banner-ball1 {
+  top: 43px;
+  left: 36px;
+  width: 85px;
+  height: 81px;
 }
 
-.no-webp .main {
-  background-image: url("~@/assets/images/the-hub.png");
+.banner-ball3 {
+  width: 158px;
+  height: 171px;
+  right: 30px;
+  bottom: 66px;
 }
 
-@media (min-width: $sm) {
-  .main {
-    background-image: url("~@/assets/images/the-hub-desktop.png?webp");
+@media (min-width: 768px) {
+  .hub-banner {
+    height: 887px;
   }
-
-  .no-webp .main {
-    background-image: url("~@/assets/images/the-hub-desktop.png");
+  .banner-content {
+    width: 772px;
+  }
+  .banner-ball1 {
+    top: 122px;
+    left: 460px;
+    width: 138px;
+    height: 132px;
+  }
+  .banner-ball2 {
+    bottom: 210px;
+    left: 251px;
+    width: 111px;
+    height: 107px;
+  }
+  .banner-ball3 {
+    top: 295px;
+    right: 216px;
+    width: 202px;
+    height: 219px;
   }
 }
 </style>
