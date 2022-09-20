@@ -31,6 +31,7 @@ export default {
 .testimonial-card {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   height: 394px;
+  border-radius: 17px;
 }
 
 .five-stars {

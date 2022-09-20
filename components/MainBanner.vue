@@ -44,7 +44,7 @@ export default {
   background-image: url(~@/assets/images/bg-homepage-section-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: 100% 100%;
 
   .pt-36 {
     padding-top: 9rem;

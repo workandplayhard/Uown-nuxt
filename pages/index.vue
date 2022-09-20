@@ -147,7 +147,7 @@ export default {
       keyUpListenerAdded = true;
     }
 
-    this.mouseScroll();
+    // this.mouseScroll();
 
     let homepageWrapper = document.querySelector("#wrapper");
     let hammertime = new Hammer(homepageWrapper);

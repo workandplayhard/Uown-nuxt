@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 bg-light h-screen md:py-1">
+  <div class="py-12 bg-white h-screen md:py-1">
     <div class="container flex flex-col justify-center h-full">
       <div class="text-center">
         <h1 class="font-family-bold text-3xl mb-2">

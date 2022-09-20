@@ -67,7 +67,7 @@ export default {
       return this.$mq === "md" || this.$mq === "sm" ? 3 : 5;
     },
     space() {
-      return this.$mq === "md" || this.$mq === "sm" ? 220 : 440;
+      return 440;
     }
   },
 
