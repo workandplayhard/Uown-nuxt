@@ -4,7 +4,13 @@
     class="preview p-5 bg-white leading-tight transform hover:scale-95 transition duration-300 block"
   >
     <h1 class="text-xl md:text-2xl mb-2">{{ title }}</h1>
-    <arrowLink text="15 min read" arrowRight />
+    <img
+      :src="require(`@/assets/images/HELP_CENTRE_${inde + 1}.svg`)"
+      alt
+      width="45"
+      height="42"
+      aria-label="1"
+    />
   </nuxt-link>
 </template>
 
@@ -24,6 +30,9 @@ export default {
     link: {
       type: String,
       default: "#"
+    },
+    inde: {
+      type: Number
     }
   }
 };
@@ -35,17 +44,16 @@ export default {
     font-size: 0.88rem;
   }
 
-  /deep/ .link {
-    &::before,
-    &::after {
-      content: url("~@/assets/images/arrow-right.svg");
-    }
-  }
-
   &:hover {
     /deep/ .link::after {
       transform: translateX(0.6rem);
     }
   }
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>

@@ -4,7 +4,7 @@
       <breadcrumbs :breadcrumbs="breadcrumbs" hasX class="py-12" />
     </template>
     <template v-slot:content>
-      <div class="content grid md:grid-cols-2 gap-5">
+      <div class="content grid lg:grid-cols-3 gap-5">
         <articlePreview
           v-for="e in articles"
           :key="e.uuid"
@@ -20,9 +20,9 @@
 const layout = () => import("@/components/HelpCentreLayout");
 const breadcrumbs = () => import("@/components/Breadcrumbs");
 const articlePreview = () => import("@/components/HelpArticlePreview");
-import fullCanonicalURL from '@/mixins/fullCanonicalURL'
-import { hydrateWhenVisible } from 'vue-lazy-hydration'
-import breadcrumbList from "@/mixins/breadcrumbList"
+import fullCanonicalURL from "@/mixins/fullCanonicalURL";
+import { hydrateWhenVisible } from "vue-lazy-hydration";
+import breadcrumbList from "@/mixins/breadcrumbList";
 
 export default {
   components: {
@@ -42,8 +42,12 @@ export default {
         }
       ],
       link: [
-        { href: this.fullCanonicalURL, rel: 'canonical' },
-        { href: require('@/assets/images/tag-bg.jpg?webp'), rel: 'preload', as: 'image' },
+        { href: this.fullCanonicalURL, rel: "canonical" },
+        {
+          href: require("@/assets/images/tag-bg.jpg?webp"),
+          rel: "preload",
+          as: "image"
+        }
       ]
     };
   },
@@ -64,7 +68,7 @@ export default {
         topic = res.data.stories.filter(
           topic => topic.slug == context.params.topic
         );
-        topic = topic[0]
+        topic = topic[0];
 
         return context.app.$storyapi.get("cdn/stories/", {
           version: version,
@@ -87,15 +91,21 @@ export default {
           { text: topic.content.name, link: "/help-centre" }
         ]
       }))
-      .catch((res) => {
-      if (!res.response) {
-        console.error(res)
-        context.error({ statusCode: 404, message: 'Failed to receive content form api' })
-      } else {
-        console.error(res.response.data)
-        context.error({ statusCode: res.response.status, message: res.response.data })
-      }
-    })
+      .catch(res => {
+        if (!res.response) {
+          console.error(res);
+          context.error({
+            statusCode: 404,
+            message: "Failed to receive content form api"
+          });
+        } else {
+          console.error(res.response.data);
+          context.error({
+            statusCode: res.response.status,
+            message: res.response.data
+          });
+        }
+      });
   },
 
   computed: {
@@ -108,9 +118,8 @@ export default {
 
   jsonld() {
     return this.breadcrumbList;
-  },
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>

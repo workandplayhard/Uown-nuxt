@@ -1,7 +1,14 @@
 <template>
   <div>
-    <nuxt-link v-if="!arrowRight" :to="link" :class="commonClasses + ' ' + arrowClass">{{text}}</nuxt-link>
-    <span v-else :to="link" :class="commonClasses + ' ' + arrowClass">{{text}}</span>
+    <nuxt-link
+      v-if="!arrowRight"
+      :to="link"
+      :class="commonClasses + ' ' + arrowClass"
+      >{{ text }}</nuxt-link
+    >
+    <span v-else :to="link" :class="commonClasses + ' ' + arrowClass">{{
+      text
+    }}</span>
   </div>
 </template>
 
@@ -35,10 +42,10 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "@/assets/css/_variables";
 
-$arrow-margin: 0.93rem;
+$arrow-margin: 0.3rem;
 
 .link.nuxt-link-active {
   color: $aquamarine;
@@ -46,16 +53,17 @@ $arrow-margin: 0.93rem;
 }
 
 .link {
-  color: #a7a7a7;
+  color: #1d1d1b;
   transition: color 200ms;
 
   &:hover {
-    color: black;
+    font-weight: bold;
+    // font-size: 20px;
+    // line-height: 28px;
   }
 
   &::before,
   &::after {
-    content: url("~@/assets/images/arrow-right.svg");
     width: 1rem;
   }
 

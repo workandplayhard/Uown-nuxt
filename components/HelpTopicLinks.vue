@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-6">
+  <div class="flex flex-col space-y-6 background">
     <arrowLink
       v-for="topic in topics"
       :key="topic.uuid"
@@ -26,5 +26,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.background {
+  height: 550px;
+  background: white;
+  padding: 2rem;
+}
 </style>

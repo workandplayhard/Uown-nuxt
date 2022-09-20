@@ -1,9 +1,8 @@
 <template>
   <nuxt-link
     :to="link"
-    class="preview p-5 bg-white leading-tight transform hover:scale-95 transition duration-300 block"
+    class="preview pt-10 bg-white leading-tight transform hover:scale-95 transition duration-300 block position"
   >
-    <h1 class="text-xl md:text-2xl mb-2">{{ title }}</h1>
     <arrowLink text="15 min read" arrowRight />
   </nuxt-link>
 </template>
@@ -30,6 +29,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.position {
+  font-family: "Plus Jakarta";
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1d1d1b;
+}
+
 .preview {
   /deep/ .link {
     font-size: 0.88rem;

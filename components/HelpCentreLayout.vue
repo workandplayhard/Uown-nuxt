@@ -1,18 +1,23 @@
 <template>
   <div>
-    <searchBanner :title="bannerTitle" />
+    <searchBanner :title="bannerTitle" :para="subTitle" />
     <div class="bg-light pb-12">
       <div class="container">
         <div>
           <slot name="breadcrumbs"></slot>
         </div>
-        <div class="links-content grid gap-y-8 gap-x-5">
-          <div>
-            <bigP text="Help Topics" />
-            <links class="links" :topics='topics' />
+        <div class="text-center py-10">
+          <slot name="heading"></slot>
+        </div>
+        <div class="links-content lg:grid lg:gap-y-8 lg:gap-x-5">
+          <div class="hidden lg:grid">
+            <links class="links" :topics="topics" />
           </div>
-          <div>
+          <div class="hidden lg:grid">
             <slot name="content"></slot>
+          </div>
+          <div class="grid">
+            <slot name="category"></slot>
           </div>
         </div>
       </div>
@@ -33,6 +38,9 @@ export default {
   },
 
   props: {
+    subTitle: {
+      type: String
+    },
     topics: {
       type: Array,
       required: true
@@ -45,7 +53,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "@/assets/css/_variables";
 
 .links {
@@ -54,6 +62,13 @@ export default {
 
 .content {
   grid-row: 1;
+}
+
+.heading {
+  font-family: "Plus Jakarta bold";
+  // line-height: 86%;
+  margin: auto;
+  color: #1d1d1b;
 }
 
 @media (min-width: $sm) {

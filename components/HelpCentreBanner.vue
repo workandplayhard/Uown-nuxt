@@ -6,7 +6,7 @@
       <div>
         <bannerText
           title="How can we help?"
-          para="The Hub is our knowledge center featuring useful and inspirational articles."
+          para="The Hub is our knowledge center featuring useful and inspirational articles to help you."
           class="mb-10"
         />
         <!-- <search placeholder="What are you looking for?" /> -->

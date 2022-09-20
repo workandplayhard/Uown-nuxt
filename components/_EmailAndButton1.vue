@@ -12,11 +12,11 @@
       placeholder="Email"
       class="input flex-grow bg-white py-2 px-3 focus:outline-none text-softnavy w-full"
       :class="{
-      'mb-2 sm:mb-0': stackedOnMobile,
-      'rounded sm:rounded-r-none': stackedOnMobile && !roundedBtn,
-      'rounded-l': !stackedOnMobile && !roundedBtn,
-      'rounded text-lg': roundedBtn
-    }"
+        'mb-2 sm:mb-0': stackedOnMobile,
+        'rounded sm:rounded-r-none': stackedOnMobile && !roundedBtn,
+        'rounded-l': !stackedOnMobile && !roundedBtn,
+        'rounded text-lg': roundedBtn
+      }"
       required
     />
     <btn
@@ -31,24 +31,24 @@
 <script>
 import btn from "@/components/EmailAndButton1Button";
 import sendEmail from "@/mixins/sendEmail";
-import emailAndButton from '@/mixins/emailAndButton'
+import emailAndButton from "@/mixins/emailAndButton";
 
 export default {
   components: {
-    btn,
+    btn
   },
 
   props: {
     roundedBtn: {
-      type: Boolean,
-    },
+      type: Boolean
+    }
   },
 
-  mixins: [sendEmail, emailAndButton],
+  mixins: [sendEmail, emailAndButton]
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "@/assets/css/_variables";
 
 @media (min-width: $md) {
