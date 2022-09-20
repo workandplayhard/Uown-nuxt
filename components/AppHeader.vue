@@ -6,7 +6,7 @@
       <img
         src="~/assets/images/logo.svg"
         alt
-        class="logo hidden hidden md:block"
+        class="logo hidden md:block"
         width="92"
         height="21"
       />
@@ -82,7 +82,7 @@
         v-if="
           !$store.state.persist.dontShowAboutRisk && $store.state.pageLoaded
         "
-        class="learn px-6 sm:px-8 md:px-6 py-2 absolute uppercase top-0 left-1/2 transform -translate-x-1/2 lg:-translate-x-56 xl:-translate-x-1/2 hover:text-white cursor-pointer text-sm font-family-bold text-center transition-colors duration-300 -z-1"
+        class="learn px-6 sm:px-8 md:px-6 py-2 absolute uppercase top-0 left-1/2 transform -translate-x-1/2 lg:-translate-x-56 xl:-translate-x-1/2 hover:text-white cursor-pointer text-sm font-family-bold text-center transition-colors duration-300 -z-1 hidden"
         @click="showAboutRisk"
       >
         learn about risk

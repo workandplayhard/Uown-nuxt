@@ -31,7 +31,7 @@
         ></p>
         <BtnRounded
           v-bind="buttonOptions"
-          class="mt-2 text-xl hidden lg:block"
+          class="mt-2 text-xl hidden lg:block xl:mt-8"
         />
       </div>
       <!-- moved the image up in mobile so that it will not be cut off despite the existance of address bar -->
