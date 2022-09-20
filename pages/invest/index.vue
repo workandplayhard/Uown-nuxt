@@ -14,7 +14,7 @@
       <InvestSimple class="section" />
       <!-- wrapped CarouselTwo in a div instead of giving them the "section" class because doing so was causing problems with lazy hydration -->
       <InvestStrength class="section" />
-      <Journey class="section" />
+      <Journey />
       <appFooter class="min-h-screen flex flex-col justify-center" />
     </div>
   </div>
@@ -215,6 +215,7 @@ export default {
 <style lang="scss" scoped>
 #wrapper-main {
   top: 3.5rem;
+  overflow: scroll;
 }
 
 #wrapper {
