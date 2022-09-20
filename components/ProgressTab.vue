@@ -254,18 +254,6 @@ export default {
   border-radius: 1rem;
 }
 
-@media (min-width: 1024px) {
-  .progress {
-    border-left: solid 81px red;
-  }
-}
-
-@media (max-width: 1023px) {
-  .progress {
-    border-top: solid 81px red;
-  }
-}
-
 .bg-red {
   background-color: red;
 }

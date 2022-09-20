@@ -177,6 +177,7 @@ body {
   top: 3.5rem;
   height: calc(100vh - 3.5rem);
   overflow: scroll;
+  scroll-snap-align: none;
 }
 
 #wrapper {

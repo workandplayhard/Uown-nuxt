@@ -5,9 +5,9 @@
     "
   >
     <div class="hub-banner-image order-2 md:order-1 mx-auto">
-      <img src="@/assets/images/HOME_JOURNEY.jpg" />
+      <img src="@/assets/images/HOME_JOURNEY.png" />
     </div>
-    <div class="text-center text-white order-1 md:order-2 mt-auto md:m-0">
+    <div class="text-center text-white order-1 md:order-2 mt-auto md:m-0 z-1">
       <h1 class="capitalize md:text-5xl font-bold text-center text-4xl">
         {{ category }}
       </h1>
