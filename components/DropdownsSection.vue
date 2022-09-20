@@ -25,7 +25,10 @@
     >
       <div class="absolute top-0 sm:static pt-12 sm:pt-0 pr-6 text order-1">
         <h1 class="text-4xl mb-2 sm:order-first">{{ heading }}</h1>
-        <p v-html="para" class="text-xl sm:order-first w-544 lg:text-2xl"></p>
+        <p
+          v-html="para"
+          class="text-xl sm:order-first w-322 md:w-544 lg:text-2xl"
+        ></p>
         <BtnRounded
           v-bind="buttonOptions"
           class="mt-2 text-xl hidden lg:block"
@@ -103,6 +106,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/css/_variables";
+
+.w-322 {
+  @media (max-width: $sm) {
+    width: 322px !important;
+  }
+}
 
 .w-544 {
   @media (max-width: $lg) {
