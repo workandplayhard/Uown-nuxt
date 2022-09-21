@@ -5,7 +5,7 @@
       items-center
       text-center
       lg:text-left
-      h-screen
+      md:h-screen
       overflow-hidden
       way-to-invest
       bg-no-repeat bg-contain
@@ -23,7 +23,7 @@
         lg:flex-row
       "
     >
-      <div class="absolute top-0 sm:static pt-12 sm:pt-0 pr-6 text order-1">
+      <div class="top-0 sm:static pt-12 sm:pt-0 pr-6 text md:order-1">
         <h1 class="text-4xl mb-2 sm:order-first">{{ heading }}</h1>
         <p
           v-html="para"

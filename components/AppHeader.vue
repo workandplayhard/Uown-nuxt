@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center justify-between fixed w-full top-0 px-6 md:px-12 py-4 bg-white leading-7 shadow-[0_7px_14px_rgba(0, 0, 0, 0.06)]"
+    class="flex items-center justify-between fixed w-full top-0 px-6 md:px-12 py-4 bg-white leading-7 shadow"
   >
     <nuxt-link to="/" id="logo-wrapper" aria-label="logo">
       <img
@@ -293,5 +293,9 @@ header {
 
 .h-650 {
   height: 650px;
+}
+
+.shadow {
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.06);
 }
 </style>

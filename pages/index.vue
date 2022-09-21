@@ -5,7 +5,7 @@
       <ProgressTab />
       <!-- <SectionPhones class="section" /> -->
       <DropdownsSection
-        class="section"
+        class="sm:section"
         heading="Rest Assured"
         para="Your security and trust are important to us. We’re committed to protecting your account with the highest standards of security available."
         imgSource="way-to-invest_li7jf4.png"
