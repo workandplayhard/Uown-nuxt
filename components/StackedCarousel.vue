@@ -103,7 +103,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/css/_variables";
 
-.carousel-3d-slide {
+#wrapper div.carousel-3d-slide {
   overflow: unset;
   background-color: transparent;
   padding: 20px;
@@ -119,9 +119,9 @@ export default {
   --translate-x: 10%;
 
   @media (max-width: $lg) {
-    width: 10em;
+    width: 10em !important;
     top: 100%;
-    left: 50%;
+    left: 50% !important;
     transform: translateX(-50%);
     display: block;
   }
