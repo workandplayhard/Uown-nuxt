@@ -111,7 +111,7 @@ export default {
 
 .carousel-3d-container {
   margin: 0;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 /deep/ .carousel-3d-controls {
