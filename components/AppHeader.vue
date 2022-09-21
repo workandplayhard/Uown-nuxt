@@ -225,7 +225,7 @@ header {
 }
 
 .shadow {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4 4 0 rgba(0, 0, 0, 0.25);
 }
 
 .links {
