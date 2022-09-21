@@ -30,8 +30,13 @@ export default {
 
 .testimonial-card {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  height: 394px;
   border-radius: 17px;
+  @media (max-width: $sm) {
+    height: 354px;
+  }
+  @media (min-width: $sm) {
+    height: 394px;
+  }
 }
 
 .five-stars {

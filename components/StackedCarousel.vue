@@ -58,7 +58,7 @@ export default {
   data() {
     return {
       width: 350,
-      height: 394,
+      height: 354,
       display: 3
     };
   },
@@ -127,7 +127,7 @@ export default {
   }
 
   @media (max-width: $sm) {
-    top: 120% !important;
+    top: 110% !important;
   }
 }
 
