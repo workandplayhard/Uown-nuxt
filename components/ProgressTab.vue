@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-gray-100 py-10">
-    <div class="container bg-white px-0 rounded-2xl py-16">
+    <div class="container bg-white px-0 rounded-2xl py-16 lg:pl-20">
       <div class="progress">
         <div class="grid-cols-2 gap-4 hidden lg:grid relative">
           <div class="ml-12">
