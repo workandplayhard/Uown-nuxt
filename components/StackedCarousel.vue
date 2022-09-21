@@ -109,7 +109,7 @@ export default {
   padding: 20px;
 }
 
-.carousel-3d-container {
+#wrapper div.carousel-3d-container {
   margin: 0;
   overflow: visible !important;
 }
