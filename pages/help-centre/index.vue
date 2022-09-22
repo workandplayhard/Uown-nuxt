@@ -166,6 +166,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .article-heading {
