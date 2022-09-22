@@ -25,7 +25,7 @@
       controls-next-html="→"
       :loop="false"
       :startIndex="0"
-      :display="4"
+      :display="5"
     >
       <slide :index="0">
         <HubCard
