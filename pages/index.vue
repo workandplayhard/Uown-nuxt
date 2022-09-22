@@ -189,4 +189,8 @@ body {
   height: 100%;
   min-height: unset;
 }
+
+#__layout {
+  min-width: 312px;
+}
 </style>
