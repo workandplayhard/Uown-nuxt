@@ -43,7 +43,7 @@
               for="default-radio-1"
               class="ml-4 lg:text-base text-sm font-medium text-black"
             >
-              Rephrase this with diff TOV
+              Keep me up to date with everything UOWN
             </label>
           </div>
           <button

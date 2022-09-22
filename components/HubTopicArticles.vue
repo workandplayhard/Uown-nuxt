@@ -6,7 +6,7 @@
         title="How to redecorate to gain the most money.sdfsdfds"
         linkText="12 min read →"
         link="/"
-        color="#5a6ecc"
+        :color="borderBottomColor"
         v-for="(item, i) in 12"
         :key="`hub-topic-${i}`"
       />
@@ -38,13 +38,23 @@ export default {
     borderClass() {
       let res = "";
       if (this.category.includes(" ")) {
-        res = this.category
-          .toLowerCase()
-          .slice(0, this.category.indexOf(" ") + 1);
+        res = this.category.toLowerCase().slice(0, this.category.indexOf(" "));
       } else {
         res = this.category.toLowerCase();
       }
       return res;
+    },
+    borderBottomColor() {
+      switch (this.borderClass) {
+        case "property":
+          return "aquamarine";
+        case "money":
+          return "#5a6ecc";
+        case "home":
+          return "#ffd008";
+        default:
+          return "salmon";
+      }
     }
   },
   date() {

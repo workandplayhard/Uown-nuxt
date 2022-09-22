@@ -25,7 +25,7 @@
       controls-next-html="→"
       :loop="false"
       :startIndex="0"
-      :display="6"
+      :display="4"
     >
       <slide :index="0">
         <HubCard
@@ -162,6 +162,7 @@ export default {
   left: -430px;
   top: auto;
   padding-bottom: 12px;
+  margin-left: 0.5rem;
 }
 
 /deep/ {
