@@ -165,7 +165,7 @@ export default {
   background-image: url(~@/assets/images/bg-help-article-landing.png?webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: 100% 100%;
 }
 
 .article-heading {

@@ -1,10 +1,8 @@
 <template>
   <div
-    class="bg-white shadow-md rounded-md flex flex-col items-center text-center p-4"
-    @mouseenter="play"
-    @mouseleave="stop"
+    class="bg-white shadow-md rounded-md flex flex-col items-center text-center p-4 hover"
   >
-    <lottie :options="defaultOptions" v-on:animCreated="handleAnimation" />
+    <img :src="get_svg" class="mb-20" alt width="147" height="135" />
     <p class="text-xl md:text-2xl" v-html="text"></p>
   </div>
 </template>
@@ -31,6 +29,15 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    svg: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    get_svg() {
+      return this.svg;
     }
   },
   methods: {
@@ -50,5 +57,16 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
+.hover {
+  border-radius: 24px;
+
+  &:hover {
+    margin: -2rem;
+  }
+}
+
+// .hover:hover + .hover {
+//   margin: 20px;
+// }
 </style>

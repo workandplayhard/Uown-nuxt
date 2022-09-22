@@ -1,9 +1,18 @@
 <template>
   <div class="bg-light py-12 sm:py-24">
     <div class="container text-center">
-      <h1 class="text-3xl font-family-bold mb-16 text-gray-900" v-html="title"></h1>
+      <h1
+        class="text-3xl font-family-bold mb-16 text-gray-900"
+        v-html="title"
+      ></h1>
       <div class="grid gap-5 grid-cols-2 lg:grid-cols-4 justify-center">
-        <LottieCard v-for="(e, i) in cardsContent" :key='i' :text='e.text' :animationData='e.animationData' />
+        <LottieCard
+          v-for="(e, i) in cardsContent"
+          :key="i"
+          :svg="e.svg"
+          :text="e.text"
+          :animationData="e.animationData"
+        />
       </div>
     </div>
   </div>
@@ -30,5 +39,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

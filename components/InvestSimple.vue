@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:grid lg:grid-cols-2 container lg:w-full lg:mx-0 lg:px-0 lg:max-w-full md:px-16 flex flex-col justify-around py-8"
+    class="lg:grid lg:grid-cols-2 container lg:w-full lg:mx-0 lg:px-0 lg:max-w-full md:px-16 flex flex-col justify-around"
   >
     <div
       class="order-2 lg:order-1 simple-image w-full bg-center bg-cover"
@@ -43,6 +43,7 @@ export default {
 
 .simple-image {
   background-image: url("@/assets/images/INVEST_SIMPLE.png");
+  background-position: 100% 100%;
   border-radius: 12px;
   height: 397px;
 }

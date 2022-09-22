@@ -1,20 +1,13 @@
 <template>
   <header
-    class="flex items-center justify-between fixed w-full top-0 px-6 md:px-12 py-4 bg-white leading-7 shadow"
+    class="flex items-center justify-between fixed w-full top-0 px-6 md:px-12 py-4 bg-white leading-7 lg:shadow"
   >
     <nuxt-link to="/" id="logo-wrapper" aria-label="logo">
       <img
         src="~/assets/images/logo.svg"
         alt
-        class="logo hidden md:block"
+        class="logo"
         width="92"
-        height="21"
-      />
-      <img
-        src="~/assets/images/logo-mobile.svg"
-        alt
-        class="logo md:hidden"
-        width="40"
         height="21"
       />
     </nuxt-link>
@@ -52,7 +45,7 @@
         @link-clicked="hideMenu"
         :menu="link.menu"
         :class="{ line: link.text == 'Login' }"
-        class="hover:bg-gray-300"
+        class="hover:bg-gray-300 font-bold"
       />
     </div>
     <div
@@ -134,11 +127,11 @@ export default {
         //   ],
         // },
         {
-          text: "The hub",
+          text: "About ↓",
           link: "/the-hub"
         },
         {
-          text: "Help",
+          text: "Learn ↓",
           link: "/help-centre"
         },
         {
@@ -293,9 +286,5 @@ header {
 
 .h-650 {
   height: 650px;
-}
-
-.shadow {
-  box-shadow: 0px 7px rgba(0, 0, 0, 0.06);
 }
 </style>

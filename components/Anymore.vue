@@ -19,7 +19,7 @@
       </div>
     </div>
     <div
-      class="md:bg-anymore flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative md:block hidden"
+      class="bg-anymore flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative md:block hidden"
     >
       <div
         class="lg:grid px-16 lg:grid-cols-2 grid flex-row-reverse lg:mt-0 mt-12"
@@ -29,7 +29,7 @@
           class="block order-first lg:order-last lg:block hidden md:block"
         />
         <div
-          class="z-10 md:w-544 bg-white p-10 rounded-30 m-auto hidden md:block"
+          class="text-center lg:text-left z-10 md:w-544 bg-white p-10 rounded-30 m-auto hidden md:block"
         >
           <div class="flex items-center justify-left pt-5">
             <label

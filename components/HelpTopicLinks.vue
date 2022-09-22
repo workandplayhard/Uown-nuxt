@@ -31,5 +31,7 @@ export default {
   height: 550px;
   background: white;
   padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.05) !important;
 }
 </style>

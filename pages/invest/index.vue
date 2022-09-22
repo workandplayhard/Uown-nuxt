@@ -9,13 +9,13 @@
       <LottieSection
         title="UOWN is a trusted partner, experienced developer, and a transparent platform."
         :cardsContent="lottieCardsContent1"
-        class="section overflow-hidden xl:flex items-center"
+        class="section overflow-hidden xl:flex items-center bg-fb"
       />
       <InvestSimple class="section" />
       <!-- wrapped CarouselTwo in a div instead of giving them the "section" class because doing so was causing problems with lazy hydration -->
       <InvestStrength class="section" />
       <Journey />
-      <appFooter class="min-h-screen flex flex-col justify-center" />
+      <appFooter class="flex flex-col justify-center" />
     </div>
   </div>
 </template>
@@ -190,7 +190,7 @@ export default {
       keyUpListenerAdded = true;
     }
 
-    this.mouseScroll();
+    // this.mouseScroll();
 
     let investPageWrapper = document.querySelector("#wrapper");
     let hammertime = new Hammer(investPageWrapper);
@@ -213,17 +213,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#wrapper-main {
-  top: 3.5rem;
-  overflow: scroll;
+html,
+body {
+  overflow-y: hidden;
 }
 
-#wrapper {
-  transition: transform 500ms ease-in-out;
+#wrapper-main {
+  top: 3.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-align: none !important;
+  height: calc(100vh - 3.5rem);
+
+  #wrapper {
+    transition: transform 500ms ease-in-out;
+  }
 }
 
 .section {
   height: 100%;
   min-height: unset;
+}
+
+.bg-fb {
+  background: #fbfbfb !important;
 }
 </style>

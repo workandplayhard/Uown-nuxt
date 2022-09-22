@@ -126,4 +126,8 @@ export default {
 h1 {
   font-family: "plus jakarta extra bold";
 }
+
+.anymore {
+  background: #fbfbfb !important;
+}
 </style>

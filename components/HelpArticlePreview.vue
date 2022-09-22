@@ -31,6 +31,9 @@ export default {
 
 <style lang="scss" scoped>
 .preview {
+  border-radius: 10px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.04);
+
   /deep/ .link {
     font-size: 0.88rem;
   }

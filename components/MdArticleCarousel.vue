@@ -79,6 +79,7 @@ export default {
   width: 253px !important;
   height: 150px !important;
   margin-left: 3.5rem;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.04);
 }
 
 .carousel-3d-container {
@@ -105,7 +106,12 @@ export default {
   }
 
   @media (max-width: $sm) {
-    top: 120% !important;
+    width: 10em;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    top: 95% !important;
   }
 }
 

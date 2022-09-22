@@ -27,6 +27,9 @@ export default {
 <style>
 .invest-banner {
   background-image: url("../assets/images/INVEST_BANNER.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-title {
