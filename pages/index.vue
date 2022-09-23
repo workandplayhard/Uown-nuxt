@@ -170,6 +170,7 @@ export default {
 <style lang="scss" scoped>
 html,
 body {
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 

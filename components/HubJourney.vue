@@ -80,6 +80,8 @@ export default {
   border-radius: 20px;
   background-image: url("~@/assets/images/HUB_JOURNEY_SM_BACKGROUND.png");
   min-height: 349px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .invest-button {

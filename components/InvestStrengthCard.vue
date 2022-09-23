@@ -8,9 +8,10 @@
     </div>
     <img src="@/assets/images/INVEST_BALL.png" class="ball-image mx-auto" />
     <div
-      class="text-center lg:text-xl lg:px-16 md:text-sm md:px-6 mt-auto text-xs px-4"
+      class="text-center lg:text-2xl lg:px-16 md:text-sm md:px-6 mt-auto text-xs px-4 font-bold"
     >
-      On our journey so far we have paid out a total of £217k to UOWNers.
+      On our journey so far we have paid out a total of £217k to UOWNers.This
+      has spanned across a total of.
     </div>
   </div>
 </template>

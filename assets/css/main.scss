@@ -224,3 +224,9 @@ input[type="number"] {
 /* Extra Large (xl) */
 @media (min-width: $xl) {
 }
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
