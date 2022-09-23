@@ -9,9 +9,9 @@
       <div class="text-xl font-bold">
         {{ title }}
       </div>
-      <nuxt-link class="mt-8 text-xs font-bold" :to="link">
+      <a class="mt-8 text-xs font-bold" :href="'https://www.uown.co' + link">
         {{ linkText }}
-      </nuxt-link>
+      </a>
     </div>
   </div>
 </template>

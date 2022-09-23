@@ -32,9 +32,9 @@
         <slide :index="0">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How to earn money"
+            title="Good contacts a landlord needs to have"
             linkText="12 min read →"
-            link="/"
+            link="/the-hub/good-contacts-a-landlord-needs-to-have"
             class="hug-card"
             :color="bgColor"
           />
@@ -42,9 +42,9 @@
         <slide :index="1">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How to redecorate to gain the most money."
+            title="Good contacts a landlord needs to have"
             linkText="12 min read →"
-            link="/"
+            link="/the-hub/good-contacts-a-landlord-needs-to-have"
             class="hug-card"
             :color="bgColor"
           />
@@ -52,9 +52,9 @@
         <slide :index="2">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How to redecorate to gain the most money."
+            title="Good contacts a landlord needs to have"
             linkText="12 min read →"
-            link="/"
+            link="/the-hub/good-contacts-a-landlord-needs-to-have"
             class="hug-card"
             :color="bgColor"
           />
@@ -62,9 +62,9 @@
         <slide :index="3">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How to redecorate to gain the most money."
+            title="Good contacts a landlord needs to have"
             linkText="12 min read →"
-            link="/"
+            link="/the-hub/good-contacts-a-landlord-needs-to-have"
             class="hug-card"
             :color="bgColor"
           />
@@ -72,9 +72,9 @@
         <slide :index="4">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How to redecorate to gain the most money."
+            title="Good contacts a landlord needs to have"
             linkText="12 min read →"
-            link="/"
+            link="/the-hub/good-contacts-a-landlord-needs-to-have"
             class="hug-card"
             :color="bgColor"
           />
