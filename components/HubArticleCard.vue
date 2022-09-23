@@ -14,7 +14,7 @@
         class="hub-article-category p-6 relative mb-8"
         :style="{ border: `1.4px solid ${bgColor}` }"
       >
-        <h2 class="text-3xl font-bold">
+        <h2 class="text-xl font-bold">
           Tips for renting out a property for the first time.
         </h2>
         <div class="absolute see-popular text-xl">15min read →</div>
@@ -23,7 +23,7 @@
         class="hub-article-category p-6 relative mb-8"
         :style="{ border: `1.4px solid ${bgColor}` }"
       >
-        <h2 class="text-3xl font-bold">
+        <h2 class="text-xl font-bold">
           Tips for renting out a property for the first time.
         </h2>
         <div class="absolute see-popular text-xl">15min read →</div>
@@ -32,7 +32,7 @@
         class="hub-article-category p-6 relative mb-8"
         :style="{ border: `1.4px solid ${bgColor}` }"
       >
-        <h2 class="text-3xl font-bold">
+        <h2 class="text-xl font-bold">
           Tips for renting out a property for the first time.
         </h2>
         <div class="absolute see-popular text-xl">15min read →</div>

@@ -6,7 +6,7 @@
         <div>
           <slot name="breadcrumbs"></slot>
         </div>
-        <div class="text-center py-10">
+        <div class="text-center py-5">
           <slot name="heading"></slot>
         </div>
         <div class="links-content lg:grid lg:gap-y-8 lg:gap-x-5">

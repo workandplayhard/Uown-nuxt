@@ -4,6 +4,7 @@
       :disable3d="true"
       :space="450"
       :clickable="false"
+      dir="ltr"
       controlsVisible
     >
       <slide v-for="(slide, i) in slides" :index="i" :key="i">

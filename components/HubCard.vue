@@ -6,10 +6,10 @@
       :style="{ 'border-bottom': `5px solid ${color}` }"
     />
     <div class="p-6">
-      <div class="text-3xl font-bold">
+      <div class="text-xl font-bold">
         {{ title }}
       </div>
-      <nuxt-link class="mt-8 text-xl font-bold" :to="link">
+      <nuxt-link class="mt-8 text-xs font-bold" :to="link">
         {{ linkText }}
       </nuxt-link>
     </div>
@@ -43,13 +43,20 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .hub-card {
   background-color: white;
   box-shadow: 0px 8px 9px 18px rgba(29, 29, 27, 0.03);
   border-radius: 20px;
   overflow: hidden;
-  height: 412px;
+  height: 312px;
+
+  &:hover {
+    box-shadow: 2 2 6px 2 rgba(92, 160, 255, 0.15);
+    // height: 380px;
+    width: 300px;
+    opacity: 0.5;
+  }
 }
 
 .card-image {

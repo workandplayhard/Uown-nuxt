@@ -4,7 +4,7 @@
     class="main bg-cover bg-center mt-from-header py-32 xl:pt-32 xl:pb-48 text-center"
   >
     <div class="container">
-      <h1 class="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      <h1 class="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl pt-20">
         {{ title }}
       </h1>
       <p class="p text-2xl mb-10">{{ para }}</p>
@@ -37,8 +37,7 @@ export default {
 @import "@/assets/css/_variables";
 
 .main {
-  height: 920px;
-  padding-top: 300px;
+  height: 460px;
   background-image: url(~@/assets/images/bg-help-landing.png?webp);
   background-repeat: no-repeat;
   background-size: cover;
