@@ -142,7 +142,7 @@ export default {
 }
 
 .ml-vw {
-  margin-left: calc(50vw - 680px);
+  margin-left: calc(50vw - 985px);
 }
 
 .category-image {
@@ -174,6 +174,7 @@ export default {
   margin: 0;
   width: 1360px;
   overflow: visible;
+  margin-left: 41rem;
 }
 
 /deep/ .carousel-3d-slider {
@@ -182,7 +183,7 @@ export default {
 
 /deep/ .carousel-3d-controls {
   bottom: 40px;
-  left: -338px;
+  left: -1002px;
   top: auto;
   padding-bottom: 12px;
   margin-left: 0.5rem;
