@@ -21,7 +21,7 @@
         :width="width"
         :border="0"
         controlsVisible
-        :space="400"
+        :space="330"
         controls-prev-html="<span>←</span>"
         controls-next-html="→"
         :loop="false"
@@ -166,11 +166,7 @@ export default {
 
 .hub-card {
   &:hover {
-    box-shadow: 2 2 6px 2 rgba(92, 160, 255, 0.15);
-    // height: 380px;
-    width: 300px;
     opacity: 0.5;
-    // border-color: #5a6ecc;
   }
 }
 

@@ -53,8 +53,6 @@ export default {
 
   &:hover {
     box-shadow: 2 2 6px 2 rgba(92, 160, 255, 0.15);
-    // height: 380px;
-    width: 300px;
     opacity: 0.5;
   }
 }

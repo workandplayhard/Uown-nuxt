@@ -1,6 +1,6 @@
 <template>
   <div class="container my-12">
-    <div class="grid-cols-4 gap-8 hidden md:grid">
+    <div class="grid-cols-4 gap-8 hidden lg:grid">
       <HubCard
         img="../assets/images/HUB_CARD_IMAGE.png"
         title="How to redecorate to gain the most money.sdfsdfds"
@@ -11,9 +11,11 @@
         :key="`hub-topic-${i}`"
       />
     </div>
-    <div class="grid-cols-1 grid grid-cols-2 md:hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:hidden gap-2">
       <div
-        :class="`hub-article-category p-6 relative mb-8 ${borderClass}`"
+        :class="
+          `m-auto hub-article-category p-6 relative mb-8 md:mb-0 ${borderClass}`
+        "
         v-for="(item, i) in 12"
         :key="`hub-topic-${i}`"
       >
@@ -88,7 +90,8 @@ export default {
 
 .hub-article-category {
   border-radius: 20px;
-  width: 368px;
+  max-width: 368px;
+  width: 100%;
   height: 210px;
 }
 
