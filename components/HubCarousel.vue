@@ -142,7 +142,13 @@ export default {
 }
 
 .ml-vw {
-  margin-left: calc(50vw - 985px);
+  @media (min-width: 1980px) {
+    margin-left: calc(50vw - 985px);
+  }
+
+  @media (max-width: 1980px) {
+    margin-left: 2rem;
+  }
 }
 
 .category-image {
