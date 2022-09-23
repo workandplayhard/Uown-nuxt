@@ -13,7 +13,7 @@
       />
       <InvestSimple class="section" />
       <!-- wrapped CarouselTwo in a div instead of giving them the "section" class because doing so was causing problems with lazy hydration -->
-      <InvestStrength class="section" />
+      <InvestStrength />
       <Journey />
       <appFooter class="flex flex-col justify-center" />
     </div>
