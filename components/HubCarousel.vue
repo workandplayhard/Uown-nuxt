@@ -29,12 +29,24 @@
         :display="5"
         dir="ltr"
       >
-        <slide :index="0">
+        <div v-for="(item, ind) in mock">
+          <slide :index="ind">
+            <HubCard
+              img="../assets/images/HUB_CARD_IMAGE.png"
+              :title="item.title"
+              linkText="12 min read →"
+              :link="item.link"
+              class="hug-card"
+              :color="bgColor"
+            />
+          </slide>
+        </div>
+        <!-- <slide :index="0">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Good contacts a landlord needs to have"
+            :title="mock[0].title"
             linkText="12 min read →"
-            link="/the-hub/good-contacts-a-landlord-needs-to-have"
+            :link="mock[0].link"
             class="hug-card"
             :color="bgColor"
           />
@@ -42,9 +54,9 @@
         <slide :index="1">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Good contacts a landlord needs to have"
+            :title="mock[1].title"
             linkText="12 min read →"
-            link="/the-hub/good-contacts-a-landlord-needs-to-have"
+            :link="mock[]"
             class="hug-card"
             :color="bgColor"
           />
@@ -52,9 +64,9 @@
         <slide :index="2">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Good contacts a landlord needs to have"
+            title="Tips for selling your house"
             linkText="12 min read →"
-            link="/the-hub/good-contacts-a-landlord-needs-to-have"
+            link="/the-hub/tips-for-selling-your-house"
             class="hug-card"
             :color="bgColor"
           />
@@ -62,9 +74,9 @@
         <slide :index="3">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Good contacts a landlord needs to have"
+            title="Is Property Still A Good Investment"
             linkText="12 min read →"
-            link="/the-hub/good-contacts-a-landlord-needs-to-have"
+            link="/the-hub/is-property-still-a-good-investment"
             class="hug-card"
             :color="bgColor"
           />
@@ -72,13 +84,13 @@
         <slide :index="4">
           <HubCard
             img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Good contacts a landlord needs to have"
+            title="How To Build A Property Portfolio"
             linkText="12 min read →"
-            link="/the-hub/good-contacts-a-landlord-needs-to-have"
+            link="/the-hub/how-to-build-a-property-portfolio"
             class="hug-card"
             :color="bgColor"
           />
-        </slide>
+        </slide> -->
       </carousel-3d>
     </div>
   </div>
@@ -111,6 +123,13 @@ export default {
     },
     img: {
       type: String
+    },
+    ind: {
+      type: String
+    },
+    mock: {
+      type: Array,
+      required: true
     }
   },
   mounted() {

@@ -57,6 +57,10 @@ export default {
     category: {
       type: String,
       required: true
+    },
+    mock: {
+      type: Array,
+      required: true
     }
   },
   methods: {
