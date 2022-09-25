@@ -62,7 +62,7 @@ export default {
   border-radius: 24px;
 
   &:hover {
-    margin: -2rem;
+    margin: -0.8rem;
   }
 }
 
