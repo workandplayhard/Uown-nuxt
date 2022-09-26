@@ -130,17 +130,20 @@ export default {
           {
             title: "How Long Does It Take To Buy A House",
             link: "/the-hub/how-long-does-it-take-to-buy-a-house",
-            img_url: ""
+            img_url:
+              "https://res.cloudinary.com/uown-sd/image/upload/c_fill,f_auto,h_720,q_40/v1/the-hub/how_long_to_sell_q6kpqc.jpg"
           },
           {
             title: "Questions To Ask Prospective Tenants",
             link: "/the-hub/questions-to-ask-prospective-tenants",
-            img_url: ""
+            img_url:
+              "https://res.cloudinary.com/uown-sd/image/upload/c_fill,f_auto,h_720,q_40/v1/the-hub/questions_cekzt6.jpg"
           },
           {
             title: "How To Make A Rental Inventory",
             link: "/the-hub/how-to-make-a-rental-inventory",
-            img_url: ""
+            img_url:
+              "https://res.cloudinary.com/uown-sd/image/upload/c_fill,f_auto,h_720,q_40/v1/the-hub/inventory_gdfbyj.jpg"
           },
           {
             title: "What is a sitting tenant?",
