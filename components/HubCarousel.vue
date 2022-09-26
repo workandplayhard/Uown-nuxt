@@ -32,7 +32,7 @@
         <div v-for="(item, ind) in mock">
           <slide :index="ind">
             <HubCard
-              img="../assets/images/HUB_CARD_IMAGE.png"
+              :img="item.img_url"
               :title="item.title"
               linkText="12 min read →"
               :link="item.link"
@@ -70,9 +70,6 @@ export default {
     },
     articles: {
       type: Array
-    },
-    img: {
-      type: String
     },
     ind: {
       type: String

@@ -1,7 +1,7 @@
 <template>
   <a class="hub-card" :href="'https://www.uown.co' + link">
     <img
-      src="../assets/images/HUB_CARD_IMAGE.png"
+      :src="img"
       class="card-image"
       :style="{ 'border-bottom': `5px solid ${color}` }"
     />
@@ -22,8 +22,7 @@ export default {
       required: true
     },
     img: {
-      type: String,
-      required: true
+      type: String
     },
     link: {
       type: String,
