@@ -17,7 +17,7 @@
         }"
       />
 
-      <StackedCarouselSection class="section" />
+      <StackedCarouselSection />
       <!-- <SectionSeven class="section" /> -->
       <Journey />
 

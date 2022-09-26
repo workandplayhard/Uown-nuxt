@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hidden lg:block">
+    <div class="hidden md:block ml-10">
       <HubCarousel
         bgColor="#71E5BD"
         category="Property"
@@ -26,7 +26,7 @@
         :mock="PropertyData[0]"
       />
     </div>
-    <div class="grid lg:hidden md:grid-cols-2 grid-cols-1">
+    <div class="grid md:hidden grid-cols-1">
       <HubArticleCard bgColor="#71E5BD" category="Property" ind="1" />
       <HubArticleCard bgColor="#5A6ECC" category="Money" ind="2" />
       <HubArticleCard bgColor="#FFD008" category="Home & Lifestyle" ind="3" />

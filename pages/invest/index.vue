@@ -9,7 +9,7 @@
       <LottieSection
         title="UOWN is a trusted partner, experienced developer, and a transparent platform."
         :cardsContent="lottieCardsContent1"
-        class="section overflow-hidden xl:flex items-center bg-fb"
+        class="overflow-hidden xl:flex items-center bg-fb"
       />
       <InvestSimple class="section" />
       <!-- wrapped CarouselTwo in a div instead of giving them the "section" class because doing so was causing problems with lazy hydration -->

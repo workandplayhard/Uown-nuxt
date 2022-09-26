@@ -1,5 +1,5 @@
 <template>
-  <div class="hub-card">
+  <a class="hub-card" :href="'https://www.uown.co' + link">
     <img
       src="../assets/images/HUB_CARD_IMAGE.png"
       class="card-image"
@@ -9,11 +9,9 @@
       <div class="text-xl font-bold">
         {{ title }}
       </div>
-      <a class="mt-8 text-xs font-bold" :href="'https://www.uown.co' + link">
-        {{ linkText }}
-      </a>
+      {{ linkText }}
     </div>
-  </div>
+  </a>
 </template>
 
 <script>

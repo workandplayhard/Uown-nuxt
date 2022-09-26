@@ -1,6 +1,6 @@
 <template>
-  <div class="sm:py-12 bg-white h-screen md:py-1">
-    <div class="container flex flex-col justify-center h-full">
+  <div class="sm:py-12 bg-white md:py-1">
+    <div class="container flex flex-col justify-center">
       <div class="text-center">
         <h1 class="font-family-bold text-3xl mb-2">
           Don’t take our word for it.

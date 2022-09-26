@@ -20,7 +20,7 @@
           <input
             type="email"
             name="Email"
-            placeholder="Email"
+            placeholder="Enter email"
             class="input flex-grow py-2 px-8 focus:outline-none w-full border border-black lg:h-16 color-black rounded-1000 h-11 hidden md:block"
             required
           />

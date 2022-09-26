@@ -120,7 +120,7 @@ export default {
 
   @media (max-width: $lg) {
     width: 10em !important;
-    top: 100%;
+    top: 100% !important;
     left: 50% !important;
     transform: translateX(-50%);
     display: block;

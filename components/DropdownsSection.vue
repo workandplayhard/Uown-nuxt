@@ -5,7 +5,6 @@
       items-center
       text-center
       lg:text-left
-      md:h-screen
       overflow-hidden
       way-to-invest
       bg-no-repeat bg-contain
@@ -21,6 +20,7 @@
         gap-20
         flex flex-col
         lg:flex-row
+        my-60
       "
     >
       <div class="top-0 sm:static pt-12 sm:pt-0 pr-6 text md:order-1">
@@ -121,6 +121,11 @@ export default {
   @media (min-width: $lg) {
     width: 662px;
   }
+}
+
+.my-60 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 h1 {

@@ -41,56 +41,6 @@
             />
           </slide>
         </div>
-        <!-- <slide :index="0">
-          <HubCard
-            img="../assets/images/HUB_CARD_IMAGE.png"
-            :title="mock[0].title"
-            linkText="12 min read →"
-            :link="mock[0].link"
-            class="hug-card"
-            :color="bgColor"
-          />
-        </slide>
-        <slide :index="1">
-          <HubCard
-            img="../assets/images/HUB_CARD_IMAGE.png"
-            :title="mock[1].title"
-            linkText="12 min read →"
-            :link="mock[]"
-            class="hug-card"
-            :color="bgColor"
-          />
-        </slide>
-        <slide :index="2">
-          <HubCard
-            img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Tips for selling your house"
-            linkText="12 min read →"
-            link="/the-hub/tips-for-selling-your-house"
-            class="hug-card"
-            :color="bgColor"
-          />
-        </slide>
-        <slide :index="3">
-          <HubCard
-            img="../assets/images/HUB_CARD_IMAGE.png"
-            title="Is Property Still A Good Investment"
-            linkText="12 min read →"
-            link="/the-hub/is-property-still-a-good-investment"
-            class="hug-card"
-            :color="bgColor"
-          />
-        </slide>
-        <slide :index="4">
-          <HubCard
-            img="../assets/images/HUB_CARD_IMAGE.png"
-            title="How To Build A Property Portfolio"
-            linkText="12 min read →"
-            link="/the-hub/how-to-build-a-property-portfolio"
-            class="hug-card"
-            :color="bgColor"
-          />
-        </slide> -->
       </carousel-3d>
     </div>
   </div>

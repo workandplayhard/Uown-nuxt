@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative overflow-hidden"
+    class="flex py-12 flex-col items-center lg:justify-start md:justify-center justify-start relative overflow-hidden mt-15"
   >
     <div class="lg:text-5xl w-447 text-center font-bold md:text-4xl text-3xl">
       Start your UOWN investment journey
@@ -28,6 +28,7 @@
           <input
             type="email"
             name="Email"
+            placeholder="Enter email"
             class="input flex-grow py-2 px-8 focus:outline-none w-full border border-black lg:h-16 color-black rounded-1000 h-11"
             required
           />
@@ -94,6 +95,10 @@ export default {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.mt-15 {
+  margin-top: 15rem;
 }
 
 .w-367 {
